@@ -12,7 +12,6 @@ function StatSection() {
         <div className="font-bold text-white">
           <h1 className="text-5xl">8+</h1>
           <p>Mentor</p>
-          
         </div>
         <div className="font-bold text-white">
           <div className="flex items-center justify-center">
@@ -22,7 +21,7 @@ function StatSection() {
             <p>Review dan Ulasan</p>
           </div>
         </div>
-        
+
         <div className="font-bold text-white ">
           <h1 className="text-5xl">100+</h1>
           <p>Lulusan</p>

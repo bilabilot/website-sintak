@@ -1,44 +1,41 @@
-import { Calendar, Clock, MapPin, Section } from "lucide-react";
 import React from "react";
+import { ShoppingCart } from "lucide-react";
 
 function HeroSection() {
   return (
-    <section>
-      <div className="max-w-7xl mx-auto flex px-4 lg:flex-row items-center" >
+    <section className="bg-[#f8f1e7] min-h-screen flex flex-col items-center justify-center px-4 py-10 gap-10">
+      <div className="relative w-full max-w-3xl aspect-[4/3] rounded-xl overflow-hidden">
+       
+        <img
+          src="cookie.png"
+          alt="Cookies"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#d6b98c]/50"></div>
 
-        <div className="flex flex-col justify-center gap-4">
-          <h1 className="text-5xl text-orange-400 font-bold">
-            Kembangkan Skill Web Development-mu dengan Mengikuti Kelas SINTAK
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center z-10">
+          <h1 className="text-6xl font-extrabold text-[#4b2e18] drop-shadow-md">
+            LOVELY!
           </h1>
-          <p className="text-gray-800 text-xl">
-            Pelajari Materi Pengembangan 
-            Website Bersama Kak Norris
-            dan kak Piastri
+          <div className="bg-[#8b5e3c] text-white px-4 py-1 rounded-full shadow-lg">
+            Start from 10k
+          </div>
+          <p className="text-sm px-4 py-1 text-[#4b2e18] font-medium">
+            Freshly baked cookies, made just for you!
           </p>
-          <div className="flex gap-4 flex-col text-center md:flex-row">
-            <a
-              href=""
-              className="bg-orange-400 px-4 py-2 text-black rounded-md hover:text-red-400 border-2 border-gray-700 transition duration-300 ease-in-out"
-            >
-              Daftar Sekarang
-            </a>
-            <a
-              href=""
-              className="bg-orange-400 px-4 py-2 text-black rounded-md hover:text-red-400 border-2 border-gray-700 transition duration-300 ease-in-out"
-            >
-              Pelajari Selangkapnya
-            </a>
-          </div>
-          <div className="flex gap-2 mt-2 items-center">
-            <Calendar className="text-black font-semibold" />
-            <p className="text-black font-semibold">Rabu, 21 Mei 2025</p>
-            <Clock className="text-black font-semibold" />
-            <p className="text-black font-semibold">13.30 - 14.30</p>
-            <MapPin className="text-black font-semibold" />
-            <p className="text-black font-semibold">Kampus Polsri</p>
-          </div>
         </div>
-        <img className="w-120 rounded-full h-auto outline-1 transition-transform duration-300 outline-orange-600 shadow-lg max-w-sm" src="./twins.jpg" alt="" />
+      </div>
+
+      <div className="flex flex-col md:flex-row gap-4 w-full max-w-3xl">
+        <div className="flex-1 bg-[#d2b48c] p-4 rounded-xl text-center shadow-md">
+          <h2 className="text-lg px-4 py-2 font-bold text-[#4b2e18]">
+            Order Now!
+          </h2>
+          <p className="text-sm px-4 py-1 text-center text-[#4b2e18]">
+            Get 30% discount, min purchase 100k
+          </p>
+        </div>
+
       </div>
     </section>
   );

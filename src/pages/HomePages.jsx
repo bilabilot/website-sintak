@@ -1,24 +1,20 @@
 import React from "react";
 import NavBar from "../components/navbar";
-import HeroSection from "../components/hero-section";
-import AboutSection from "../components/about-section";
-import StatSection from "../components/stat-section";
-import Timeline from "../components/timeline";
 import Footer from "../components/footer";
-
+import MenuSection from "../components/menu";
+import AboutSection from "../components/about-section";
+import HeroSection from "../components/hero-section";
+import StatSection from "../components/stat-section";
 
 export default function HomePage() {
   return (
     <div>
       <NavBar />
-      <HeroSection />
       <AboutSection />
+      <HeroSection />
       <StatSection />
-      <Timeline />
+      <MenuSection />
       <Footer />
-
     </div>
   );
 }
-
-

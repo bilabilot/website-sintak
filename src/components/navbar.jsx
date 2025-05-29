@@ -3,34 +3,35 @@ import React from "react";
 
 function NavBar() {
   return (
-    <header className="sticky top-0 border-3 border-black-400 rounded-md bg-amber-100 shadow-md z-10">
-      <div className=" flex mx-auto justify-between h-16 items-center px-2">
+    <header className="sticky top-0 border-b-2 border-black rounded-md bg-amber-50 shadow-md z-10 w-full">
+      <div className=" flex mx-auto justify-between h-16 items-center px-2 w-full">
         <div className="flex items-center color gap-2">
-          <CodeXml size={32} className="text-yellow-700" />
-          <h1 className="font-bold text-xl text-orange-400">SINTAK.</h1>
+          <CodeXml size={32} className="text-amber-700
+          " />
+          <h1 className="font-bold text-xl text-amber-700">FINE COOKIES</h1>
         </div>
         <ul className="hidden md:flex gap-20 text-xl font-semibold text-gray-700">
           <li>
             <a href="/" className="hover:text-gray-500">
-              Home
+              Menu
             </a>
           </li>
           <li>
             <a href="/about" className="hover:text-gray-500">
-              Tentang
+              About Us
             </a>
           </li>
           <li>
             <a href="/contact" className="hover:text-gray-500">
-              Kontak
+              Contact
             </a>
           </li>
         </ul>
         <a
           href=""
-          className="bg-orange-500 px-4 py-2 text-white rounded-md hover:bg-orange-300 border-2 border-gray-900 shadow-md transition duration-300 ease-in-out"
+          className="bg-amber-500 border-2 px-4 py-2 text-white rounded-md hover:bg-amber-700 border-amber-700 shadow-md transition-transform duration-300 ease-in-out mr-4 "
         >
-          Daftar Sekarang
+          Order Now
         </a>
       </div>
     </header>
