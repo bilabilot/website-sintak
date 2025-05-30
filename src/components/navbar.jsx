@@ -13,8 +13,8 @@ function NavBar() {
         </div>
         <ul className="hidden md:flex gap-20 text-xl font-semibold text-gray-700">
           <li>
-            <a href="/menu" className="hover:text-gray-500">
-              Menu
+            <a href="/" className="hover:text-gray-500">
+              Home
             </a>
           </li>
           <li>

@@ -6,8 +6,7 @@ import { Routes } from 'react-router'
 import HomePage from './pages/MenuSection'
 import ContactPage from './pages/Contact'
 import AboutPages from './pages/AboutPages'
-import MenuSection from './components/menu'
-import NavBar from './components/navbar'
+
 
 
 createRoot(document.getElementById("root")).render(
