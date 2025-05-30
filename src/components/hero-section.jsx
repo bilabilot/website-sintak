@@ -3,7 +3,7 @@ import { ShoppingCart } from "lucide-react";
 
 function HeroSection() {
   return (
-    <section className="bg-[#f8f1e7] min-h-screen flex flex-col items-center justify-center px-4 py-10 gap-10">
+    <section className="bg-[#f8f1e7] min-h-screen flex flex-col items-center justify-center px-4 py-4 gap-4">
       <div className="relative w-full max-w-3xl aspect-[4/3] rounded-xl overflow-hidden">
        
         <img
