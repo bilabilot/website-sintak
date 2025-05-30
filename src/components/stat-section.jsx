@@ -3,28 +3,27 @@ import React from "react";
 
 function StatSection() {
   return (
-    <section className="py-16 bg-amber-100">
-      <div className="grid grid-cols-4 items-center text-center mx-auto bg-[url(/norris.jpg)] bg-fixed py-16 ">
-        <div className="font-bold text-white">
-          <h1 className="text-5xl">90+</h1>
-          <p>Pendaftar</p>
+    <section className="bg-[#fff7f0] py-12 text-center">
+      <h2 className="text-3xl font-bold mb-8">Our Sweet Stats</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div>
+          <p className="text-4xl font-bold text-[#d2691e]">10,000+</p>
+          <p className="text-sm">Cookies Sold</p>
         </div>
-        <div className="font-bold text-white">
-          <h1 className="text-5xl">8+</h1>
-          <p>Mentor</p>
+        <div>
+          <p className="text-4xl font-bold text-[#d2691e]">12</p>
+          <p className="text-sm">Flavors</p>
         </div>
-        <div className="font-bold text-white">
-          <div className="flex items-center justify-center">
-            <h1 className="text-5xl">
-              <Star />
-            </h1>
-            <p>Review dan Ulasan</p>
+        <div>
+          <div className="flex items-center justify-center gap-1 text-4xl font-bold text-[#d2691e]">
+            4
+            <Star size={24} fill="#d2691e" stroke="none" />
           </div>
+          <p className="text-sm">Rating</p>
         </div>
-
-        <div className="font-bold text-white ">
-          <h1 className="text-5xl">100+</h1>
-          <p>Lulusan</p>
+        <div>
+          <p className="text-4xl font-bold text-[#d2691e]">500+</p>
+          <p className="text-sm">Happy Customers</p>
         </div>
       </div>
     </section>

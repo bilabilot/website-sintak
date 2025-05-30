@@ -1,59 +1,75 @@
-import React from 'react'
-import NavBar from '../components/navbar'
+import React from "react";
 
-function ContactPage() {
+const Contact = () => {
   return (
-    <div>
-      <NavBar />
-      <div className='bg bg-orange-200 flex flex-col py-32 min-h-screen items-center justify-center'>
-        <label className="input">
-          <svg
-            className="h-[1em] opacity-50"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+      <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+      <p className="text-gray-700 mb-6 text-center">
+        Fill in the form below to order your cookies! 🍪
+      </p>
+      <form
+        className="bg-white p-6 rounded shadow-md w-full max-w-md"
+        onSubmit={(e) => {
+          e.preventDefault();
+          alert("Your message has been sent! We’ll get back to you soon.");
+        }}
+      >
+        <div className="mb-4">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700"
           >
-            <g
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              strokeWidth="2.5"
-              fill="none"
-              stroke="currentColor"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.3-4.3"></path>
-            </g>
-          </svg>
-          <input type="search" className="grow" placeholder="Search" />
-          <kbd className="kbd kbd-sm">⌘</kbd>
-          <kbd className="kbd kbd-sm">K</kbd>
-        </label>
-        <label className="input">
-          <svg
-            className="h-[1em] opacity-50"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
+            placeholder="Your name"
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-gray-700"
           >
-            <g
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              strokeWidth="2.5"
-              fill="none"
-              stroke="currentColor"
-            >
-              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-            </g>
-          </svg>
-          <input type="text" className="grow" placeholder="index.php" />
-        </label>
-        <label className="input">
-          Path
-          <input type="text" className="grow" placeholder="src/app/" />
-          <span className="badge badge-neutral badge-xs">Optional</span>
-        </label>
-      </div>
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
+            placeholder="Your email"
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="order"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Your Order
+          </label>
+          <textarea
+            id="order"
+            name="order"
+            required
+            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2"
+            placeholder="What would you like to order?"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          className="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-300 transition"
+        >
+          Send Order
+        </button>
+      </form>
     </div>
   );
-}
+};
 
-export default ContactPage
+export default Contact;

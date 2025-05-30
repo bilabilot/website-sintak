@@ -1,13 +1,12 @@
-import { CodeXml } from "lucide-react";
+import { ChefHat } from "lucide-react";
 import React from "react";
 
 function NavBar() {
   return (
     <header className="sticky top-0 border-b-2 border-black rounded-md bg-amber-50 shadow-md z-10 w-full">
       <div className=" flex mx-auto justify-between h-16 items-center px-2 w-full">
-        <div className="flex items-center color gap-2">
-          <CodeXml size={32} className="text-amber-700
-          " />
+        <div className="flex items-center font-bold color gap-x-2 p-4">
+          <ChefHat size={24} className="text-lg font-bold text-amber-950"/>
           <h1 className="font-bold text-xl text-amber-700">FINE COOKIES</h1>
         </div>
         <ul className="hidden md:flex gap-20 text-xl font-semibold text-gray-700">
