@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutSection() {
   return (
-    <section className="bg-[#f8f1e7] py-16 px-4">
+    <section className="bg-[#f8f1e7] py-6 px-4">
       <div className="max-w-3xl mx-auto flex flex-col gap-4 text-center">
         <h2 className="text-3xl font-bold text-[#4b2e18]">
           About Fine Cookies
